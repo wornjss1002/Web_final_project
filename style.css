@@ -307,6 +307,7 @@ html {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
     margin-left: 10%;
+    height: 100%;
   }
   .card {
     width: 100px;
@@ -314,7 +315,7 @@ html {
   .card img {
     width: 100px;
     height: 100%;
-    margin-top: ;
+    margin-top: 20;
   }
   .card-head {
     width: 100%;
