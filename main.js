@@ -21,3 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
   // current 이미지 업데이트
   document.getElementById('current').src = firstImgSrc;
 });
+
+function showPDF(pdfSrc) {
+  // 기존에 보여지고 있는 embed 태그를 삭제
+  const pdfContainer = document.querySelector('.pdf');
+  pdfContainer.innerHTML = '';
+
+  // 새로운 embed 태그 생성 및 설정
+  const pdfEmbed = document.createElement('embed');
+  pdfEmbed.setAttribute('src', pdfSrc);
+  pdfEmbed.setAttribute('type', 'application/pdf');
+  pdfContainer.appendChild(pdfEmbed);
+
+  // PDF 영역 보이기
+  pdfContainer.style.display = 'block';
+}
