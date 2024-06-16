@@ -172,34 +172,46 @@ html {
   padding-top: 3%;
   height: 600px;
 }
-
 .card {
   width: 250px;
-  flex-direction: column;
-}
-.card-img {
-  height: 333px;
-  display: flex;
-}
-.card-head {
-  height: 50px;
-  background-color: transparent;
-  border-bottom: 2px solid #333333;
-  line-height: 50px;
-}
-.card-footer {
-  height: 50px;
-  background-color: transparent;
-  line-height: 50px;
-  border-bottom: 2px solid #333333;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  margin: 20px;
 }
 
 .card:hover {
-  transform: translateY(10px);
-  transition-duration: 0.5s;
-  transform-box: content-box;
+  transform: translateY(-5px);
 }
 
+.card-img {
+  height: auto;
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-head,
+.card-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.card-head {
+  font-size: 1.2rem;
+}
+
+.card-footer {
+  font-size: 1rem;
+}
 .member_container a {
   text-decoration: none;
   color: #333333;
@@ -294,17 +306,22 @@ html {
   .member_container {
     width: 80%;
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 20%;
+    margin-left: 10%;
+  }
+  .card {
+    width: 100px;
   }
   .card img {
-    width: 60%;
-    height: 65%;
-    margin-top: 48%;
+    width: 100px;
+    height: 100%;
+    margin-top: ;
   }
   .card-head {
-    width: 60%;
+    width: 100%;
+    font-size: 20%;
   }
   .card-footer {
-    width: 60%;
+    width: 100%;
+    font-size: 20%;
   }
 }
