@@ -1,11 +1,9 @@
 @font-face {
-  @font-face {
-    font-family: 'TheJamsil5Bold';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2')
-      format('woff2');
-    font-weight: 700;
-    font-style: normal;
-  }
+  font-family: 'TheJamsil5Bold';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
 }
 
 * {
@@ -131,7 +129,7 @@ html {
 
 .portpolio-content {
   margin-left: 20%;
-  margin-top: 5%;
+  /* margin-top: 5%; */
   color: white;
 }
 .portpolio-content h1 {
@@ -258,6 +256,7 @@ html {
 }
 .link {
   margin-top: 5%;
+  background-color: #1a1a1a;
 }
 .link-top {
   display: flex;
@@ -284,7 +283,12 @@ html {
   color: white;
 }
 .link-top button:hover {
-  border: 3px solid white;
+  background-color: #444;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 3%;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
 }
 .link .pdf {
   display: flex;
@@ -293,6 +297,7 @@ html {
   align-items: center;
   display: none;
   margin-left: 15%;
+  background-color: #1a1a1a;
 }
 .link embed {
   margin-top: 3%;
@@ -325,7 +330,6 @@ html {
     padding: 0;
     margin-bottom: 30%;
     font-size: 90%;
-
     width: 5%;
   }
   .sidebar a {
